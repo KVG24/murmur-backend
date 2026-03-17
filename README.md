@@ -1,2 +1,3 @@
-# murmur-backend
-A backend part of Murmur app
+# Murmur app
+
+## A simple micro-blog social media app
