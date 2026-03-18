@@ -1,21 +1,27 @@
 {
-  "name": "murmur-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KVG24/murmur-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/KVG24/murmur-backend/issues"
-  },
-  "homepage": "https://github.com/KVG24/murmur-backend#readme"
+    "name": "murmur-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node app.js --watch",
+        "start": "node app.js",
+        "seed": "node db/seed.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KVG24/murmur-backend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/KVG24/murmur-backend/issues"
+    },
+    "homepage": "https://github.com/KVG24/murmur-backend#readme",
+    "dependencies": {
+        "express": "^5.2.1"
+    }
 }
