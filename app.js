@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const router = require("./routes/router.js");
 require("dotenv/config");
 
 // Initiate main express app
@@ -15,6 +16,9 @@ app.use(
 // Parsing json and form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// Router
+app.use("/", router);
 
 // Live app in localhost
 app.listen(3000, (error) => {
