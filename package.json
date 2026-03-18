@@ -22,6 +22,8 @@
     },
     "homepage": "https://github.com/KVG24/murmur-backend#readme",
     "dependencies": {
+        "cors": "^2.8.6",
+        "dotenv": "^17.3.1",
         "express": "^5.2.1"
     }
 }

@@ -1,7 +1,16 @@
 const express = require("express");
+const cors = require("cors");
+require("dotenv/config");
 
 // Initiate main express app
 const app = express();
+
+// CORS config
+app.use(
+    cors({
+        origin: process.env.FRONTEND_ORIGIN,
+    }),
+);
 
 // Parsing json and form data
 app.use(express.json());
